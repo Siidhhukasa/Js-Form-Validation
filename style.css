@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(to right top,
+            #d16ba5, #c777b9, #ba83ca, #aa8fd8,
+            #9a9ae1, #8aa7ec, #79b3f4, #69bff8,
+            #52cffe, #41dfff, #46eefa, #5ffbf1);
+    min-height: 100vh;
+}
+
+.container {
+    width: 350px;
+    padding: 1rem;
+    border: 1px solid black;
+    margin: auto;
+    box-shadow: 0 0 8px black;
+    border-radius: 10px;
+}
+
+.form-group,
+.buttons {
+    padding: 0px 0px 10px 0px;
+    text-align: center;
+}
+
+
+label,
+input {
+    font-size: 1rem;
+}
+
+label::after {
+    content: "\a";
+    white-space: pre;
+}
+
+.buttons button {
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+input {
+    width: 150px;
+    margin: 5px 0px;
+    padding: 0.25rem;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    text-align: center;
+    transition: ease-in-out 0.5s width;
+}
+
+input:focus {
+    width: 300px;
+}
+
+.submit:hover {
+    background-color: aqua;
+    transform: scale(1.2);
+}
+
+.reset:hover {
+    background-color: rgb(211, 32, 32);
+    transform: scale(1.2);
+}
